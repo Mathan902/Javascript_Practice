@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="Stopwatch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="stop-watch-container">
+            <div class="hour-container" ></div>
+            :
+            <div class="minute-container"></div>
+            :
+            <div class="seconds-container"></div>
+        </div>
+        <div class="control-buttons-container">
+            <button class="start-button" onclick="startTimer()">Start</button>
+            <button class="stop-button" onclick="stopTimer()">Stop</button>
+            <button class="reset-button" onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="Stopwatch.js"></script>
+</html>
