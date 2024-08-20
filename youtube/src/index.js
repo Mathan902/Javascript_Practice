@@ -1,14 +1,13 @@
-import React, { Children } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import HomePage from './HomePage';
+import Layout from './Homepage/Layout'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomePage/>
+    <Layout/>
   </React.StrictMode>
 );
 

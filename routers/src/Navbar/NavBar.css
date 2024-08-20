@@ -1,0 +1,48 @@
+.container{
+   margin: 0;
+   width: 100vw;
+   height: 80px;
+   position: fixed;
+   top: 0;
+   background-color: rgb(247, 244, 244);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5%;
+}
+.body-container{
+    margin-top: 70px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+}
+.navigation-button{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+}
+
+.navigation-button:hover{
+    background-color: rgb(2, 2, 2);
+    color: rgb(247, 244, 244);
+}
+
+.navbar-icon{
+    display: none;
+}
+
+@media screen and (max-width:500px){
+    .navigation-button{
+        display: none;
+    }
+    .navbar-icon{
+        display: block;
+        margin-right: 20px;
+    }
+    .container{
+        align-items: center;
+        justify-content: end;
+    }
+}
