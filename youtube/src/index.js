@@ -1,13 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Layout from './Homepage/Layout'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Layout from "./Homepage/Layout";
+import StateManager from "./store";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Layout/>
+    <BrowserRouter>
+      <StateManager>
+        <Layout />
+      </StateManager>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

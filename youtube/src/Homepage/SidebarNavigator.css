@@ -1,0 +1,28 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    background: rgba(247, 244, 244, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 1000; 
+}
+
+.sidebar-nav {
+    position: relative;
+    width: 250px; 
+    height: 100vh;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    background-color:#fff ;
+}
+
+.display-icon {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    margin-right: 10px; 
+}
