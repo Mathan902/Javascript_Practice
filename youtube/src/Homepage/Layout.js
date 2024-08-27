@@ -6,6 +6,7 @@ import './Layout.css';
 import SidebarNavigator from './SidebarNavigator';
 import { Store } from '../store';
 import MyRoutes from '../MyRoutes';
+import ProtectedRouter from '../ProtectedRouter';
 
 const Layout = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(window.matchMedia("(min-width: 768px)").matches);
@@ -34,7 +35,7 @@ const Layout = () => {
                 {
                     sidebar && <div className="overlay"><SidebarNavigator /></div>
                 }
-                <MyRoutes></MyRoutes>
+                <ProtectedRouter/>
             </div>
         </div>
     );
